@@ -7,6 +7,12 @@
     >
 
     <LinearLayout
+        android:background="@android:color/holo_blue_dark"
+        android:paddingBottom="20sp"
+        android:paddingTop="20sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:layout_marginBottom="3sp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,6 +23,8 @@
             android:layout_height="wrap_content"
             android:text="@string/routine_view_title_placeholder"
             android:layout_weight="8"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             />
 
         <TextView
@@ -27,6 +35,8 @@
             android:layout_weight="1"
             android:layout_gravity="end"
             android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             />
 
         <TextView
@@ -36,6 +46,8 @@
             android:layout_weight="1"
             android:layout_gravity="end"
             android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             />
 
         <TextView
@@ -46,6 +58,8 @@
             android:layout_weight="1"
             android:layout_gravity="end"
             android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
             />
     </LinearLayout>
 

@@ -59,6 +59,7 @@ public class RoutineListFragment extends Fragment {
 
         private TextView titleTextView;
         private TextView startTimeTextView;
+        private TextView endTimeTextView;
         private Routine routine;
 
         public RoutineHolder(View itemView) {
@@ -68,6 +69,7 @@ public class RoutineListFragment extends Fragment {
 
             titleTextView = (TextView) itemView.findViewById(R.id.routine_list_title_view);
             startTimeTextView = (TextView) itemView.findViewById(R.id.routine_list_start_time_view);
+            endTimeTextView = (TextView) itemView.findViewById(R.id.routine_list_end_time_view);
         }
 
         public void bindRoutine(Routine routine) {
@@ -75,6 +77,7 @@ public class RoutineListFragment extends Fragment {
 
             titleTextView.setText(this.routine.getTitle());
             startTimeTextView.setText(dateFormat.format(this.routine.getStartTime()));
+            endTimeTextView.setText(dateFormat.format(this.routine.getEndTime()));
         }
     }
 
