@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="04.11.2016 14:00"
+                android:text="@string/start_time_placeholder"
                 />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="04.11.2016 15:00"
+                android:text="@string/end_time_placeholder"
                 />
         </LinearLayout>
 

@@ -2,4 +2,6 @@
     <string name="app_name">RoutineManager</string>
     <string name="new_routine_title_hint">Give your routine a descriptive name</string>
     <string name="routine_title_label">Title:</string>
+    <string name="start_time_placeholder">04.11.2016 14:00</string>
+    <string name="end_time_placeholder">04.11.2016 15:00</string>
 </resources>
