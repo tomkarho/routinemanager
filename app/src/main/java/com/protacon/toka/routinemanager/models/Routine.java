@@ -51,6 +51,13 @@ public class Routine {
         this.endTime = new Date(this.startTime.getTime() + 60 * 60 * 1000);
     }
 
+    public Routine(String title) {
+        this.title = title;
+        this.id = UUID.randomUUID();
+        this.startTime = new Date();
+        this.endTime = new Date(this.startTime.getTime() + 60 * 60 * 1000);
+    }
+
     public Routine(String title, Date startTime, Date endTime) {
         this.title = title;
         this.id = UUID.randomUUID();
