@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/routine_list_item"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/routine_list_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/routine_view_title_placeholder"
+            android:layout_weight="8"
+            />
+
+        <TextView
+            android:id="@+id/routine_list_start_time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/routine_list_date_placeholder"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            />
+
+        <TextView
+            android:id="@+id/routine_list_end_time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/routine_list_date_placeholder"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -14,6 +14,7 @@ import com.protacon.toka.routinemanager.R;
 import com.protacon.toka.routinemanager.RoutineList;
 import com.protacon.toka.routinemanager.models.Routine;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
@@ -54,12 +55,26 @@ public class RoutineListFragment extends Fragment {
 
     private class RoutineHolder extends RecyclerView.ViewHolder {
 
-        public TextView titleTextView;
+        private SimpleDateFormat dateFormat;
+
+        private TextView titleTextView;
+        private TextView startTimeTextView;
+        private Routine routine;
 
         public RoutineHolder(View itemView) {
             super(itemView);
 
-            titleTextView = (TextView) itemView;
+            dateFormat = new SimpleDateFormat("HH:mm");
+
+            titleTextView = (TextView) itemView.findViewById(R.id.routine_list_title_view);
+            startTimeTextView = (TextView) itemView.findViewById(R.id.routine_list_start_time_view);
+        }
+
+        public void bindRoutine(Routine routine) {
+            this.routine = routine;
+
+            titleTextView.setText(this.routine.getTitle());
+            startTimeTextView.setText(dateFormat.format(this.routine.getStartTime()));
         }
     }
 
@@ -75,7 +90,7 @@ public class RoutineListFragment extends Fragment {
         public RoutineHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
 
-            View view = layoutInflater.inflate(android.R.layout.simple_list_item_1, parent, false);
+            View view = layoutInflater.inflate(R.layout.routine_list_item, parent, false);
 
             return new RoutineHolder(view);
         }
@@ -84,7 +99,7 @@ public class RoutineListFragment extends Fragment {
         public void onBindViewHolder(RoutineHolder holder, int position) {
             Routine routine = routineList.get(position);
 
-            holder.titleTextView.setText(routine.getTitle());
+            holder.bindRoutine(routine);
         }
 
         @Override
