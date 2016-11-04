@@ -17,6 +17,10 @@ public class RoutineList {
 
     private static RoutineList routineList;
 
+    public List<Routine> getRoutines() {
+        return routines;
+    }
+
     private List<Routine> routines;
 
     public static RoutineList get(Context context) {
@@ -42,7 +46,17 @@ public class RoutineList {
                 new Routine("Test 7"),
                 new Routine("Test 8"),
                 new Routine("Test 9"),
-                new Routine("Test 10")
+                new Routine("Test 10"),
+                new Routine("Test 11"),
+                new Routine("Test 12"),
+                new Routine("Test 13"),
+                new Routine("Test 14"),
+                new Routine("Test 15"),
+                new Routine("Test 16"),
+                new Routine("Test 17"),
+                new Routine("Test 18"),
+                new Routine("Test 19"),
+                new Routine("Test 20")
         ));
     }
 
