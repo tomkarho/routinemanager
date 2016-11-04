@@ -10,5 +10,7 @@
         android:layout_height="wrap_content"
         android:inputType="text"
         android:hint="@string/new_routine_title_hint"
-        />
+        android:textAppearance="@android:style/TextAppearance.Material.Large.Inverse"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
 </LinearLayout>
