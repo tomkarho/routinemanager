@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentManager;
 
 import com.protacon.toka.routinemanager.fragments.RoutineFragment;
 
-public class ListActivity extends SingleFragmentActivity {
+public class RoutineActivity extends SingleFragmentActivity {
 
     @Override
     protected Fragment createFragment() {
