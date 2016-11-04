@@ -26,6 +26,10 @@ public class Routine {
 
     //endregion
 
+    public Routine() {
+        this.id = UUID.randomUUID();
+    }
+
     public Routine(String title) {
         this.title = title;
         this.id = UUID.randomUUID();
