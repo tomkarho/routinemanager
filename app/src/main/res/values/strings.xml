@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RoutineManager</string>
+    <string name="new_routine_title_hint">Give your routine a descriptive name</string>
 </resources>
