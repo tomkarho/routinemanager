@@ -8,10 +8,13 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.protacon.toka.routinemanager.R;
 import com.protacon.toka.routinemanager.models.Routine;
+
+import java.text.SimpleDateFormat;
 
 /**
  * Created by toka on 4.11.2016.
@@ -21,6 +24,9 @@ public class RoutineFragment extends Fragment {
     private Routine routine;
 
     private EditText titleField;
+
+    private Button startTimeField;
+    private Button endTimeField;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,5 +64,13 @@ public class RoutineFragment extends Fragment {
                 //Intentionally left blank
             }
         });
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
+
+        startTimeField = (Button) view.findViewById(R.id.startTime);
+        startTimeField.setText(dateFormat.format(routine.getStartTime()));
+
+        endTimeField = (Button) view.findViewById(R.id.endTime);
+        endTimeField.setText(dateFormat.format(routine.getEndTime()));
     }
 }
