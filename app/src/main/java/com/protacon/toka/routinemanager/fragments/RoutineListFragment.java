@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.protacon.toka.routinemanager.R;
-import com.protacon.toka.routinemanager.RoutineList;
+import com.protacon.toka.routinemanager.models.RoutineList;
 import com.protacon.toka.routinemanager.models.Routine;
 
 import java.text.SimpleDateFormat;

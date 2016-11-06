@@ -1,8 +1,6 @@
-package com.protacon.toka.routinemanager;
+package com.protacon.toka.routinemanager.models;
 
 import android.content.Context;
-
-import com.protacon.toka.routinemanager.models.Routine;
 
 import java.util.ArrayList;
 import java.util.Arrays;
